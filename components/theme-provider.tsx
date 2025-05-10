@@ -29,7 +29,7 @@ export function ThemeProvider({
 		} else if (defaultTheme === "system") {
 			const systemTheme = window.matchMedia("(prefers-color-scheme: dark)")
 				.matches
-				? "dark"
+				? "light"
 				: "light";
 			setTheme(systemTheme);
 		}
@@ -41,7 +41,7 @@ export function ThemeProvider({
 		if (theme === "system") {
 			const systemTheme = window.matchMedia("(prefers-color-scheme: dark)")
 				.matches
-				? "dark"
+				? "light"
 				: "light";
 
 			root.classList.remove("dark", "light");
