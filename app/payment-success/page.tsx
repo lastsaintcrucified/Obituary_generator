@@ -56,7 +56,7 @@ export default function PaymentSuccessPage() {
 					</div>
 					<CardTitle className='text-2xl'>Payment Successful</CardTitle>
 					<CardDescription>
-						Thank you for your purchase. Your obituary is now ready for
+						Thank you for your purchase, your obituary is now ready for
 						download.
 					</CardDescription>
 				</CardHeader>
