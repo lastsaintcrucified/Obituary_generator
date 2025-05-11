@@ -93,8 +93,9 @@ export function PaymentModal({
 
 		// For demo purposes only - remove this in production
 		if (
-			process.env.NODE_ENV === "development" &&
-			!process.env.STRIPE_SECRET_KEY
+			// process.env.NODE_ENV === "development" &&
+			// !process.env.NEXT_PUBLIC_STRIPE_SECRET_KEY
+			process.env.NODE_ENV === "production"
 		) {
 			// Simulate payment processing for demo
 			setTimeout(() => {
