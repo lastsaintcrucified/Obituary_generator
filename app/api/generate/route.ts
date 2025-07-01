@@ -58,7 +58,7 @@ async function generateObituaryWithOpenRouter(
 					"X-Title": "Obituary Generator",
 				},
 				body: JSON.stringify({
-					model: "qwen/qwen2.5-vl-3b-instruct:free",
+					model: "qwen/qwen-2.5-72b-instruct",
 					messages: [{ role: "user", content: fullPrompt }],
 					temperature: 0.7, // Add some variability
 					max_tokens: 500, // Limit response length
